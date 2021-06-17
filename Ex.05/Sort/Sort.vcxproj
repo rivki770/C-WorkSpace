@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{1686f673-1c17-47bb-b9f8-9cc76efb4c6d}</ProjectGuid>
-    <RootNamespace>environment</RootNamespace>
+    <ProjectGuid>{f6c4db11-6cfd-4ee2-9ca5-8e9920c2b6d3}</ProjectGuid>
+    <RootNamespace>Sort</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Environment</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,7 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Environment.c" />
+    <ClCompile Include="Main.c" />
+    <ClCompile Include="Sort.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sort.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

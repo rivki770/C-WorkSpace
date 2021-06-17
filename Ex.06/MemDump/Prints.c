@@ -24,7 +24,7 @@ void PrintHexBytes(void *ptr, size_t size)
 //    printf("\n");
 //}
 
-void PrintBits(void * ptr, size_t size)
+void PrintBits(void *ptr, size_t size)
 {
     printf("%s\n", "The memory in binary:");
     unsigned char *b = (unsigned char *) ptr;

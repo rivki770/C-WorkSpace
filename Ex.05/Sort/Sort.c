@@ -1,4 +1,4 @@
-#include "sort.h"
+#include "Sort.h"
 
 void toPrint(Dog dogArr[], size_t size)
 {

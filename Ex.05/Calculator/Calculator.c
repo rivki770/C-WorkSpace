@@ -27,7 +27,7 @@ void Creat_number(Number *number, char typeNumber)
 		printf("\nPlease enter the complex sign (between the number):\n");
 		char sign;
 		scanf_s(" %c", &sign);
-		
+
 		if (sign != '+' && sign != '-')
 		{
 			printf("\nWorng sign, the difault is +.\n");
@@ -43,7 +43,7 @@ void Creat_number(Number *number, char typeNumber)
 		{
 			(*number).number.is_complex.signComplex = sign;
 		}
-		
+
 		break;
 
 	case 'r':
@@ -111,9 +111,9 @@ void Add(Number *n1, Number *n2, Number *result)
 		(*result).is_Real = F;
 		double partReal = (*n1).number.is_complex.realNumber + (*n2).number.is_complex.realNumber;
 		double partComplex = (*n1).number.is_complex.complexNumber + (*n2).number.is_complex.complexNumber;
-		
+
 		(*result).number.is_real = partReal;
-		
+
 		(*result).number.is_complex.complexNumber = partComplex;
 		(*result).number.is_complex.realNumber = partReal;
 	}
@@ -122,9 +122,9 @@ void Add(Number *n1, Number *n2, Number *result)
 		(*result).is_Real = F;
 		double partReal = (*n1).number.is_complex.realNumber + (*n2).number.is_real;
 		double partComplex = (*n1).number.is_complex.complexNumber;
-		
+
 		(*result).number.is_real = partReal;
-		
+
 		(*result).number.is_complex.complexNumber = partComplex;
 		(*result).number.is_complex.realNumber = partReal;
 	}

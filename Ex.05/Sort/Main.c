@@ -1,4 +1,4 @@
-#include "sort.h"
+#include "Sort.h"
 
 int main()
 {

@@ -18,7 +18,7 @@ int main() {
             printf("\nGoodBye!!\n");
             return 0;
         }
-        Creat_number(&n1 ,typeNumber1);
+        Creat_number(&n1, typeNumber1);
 
         printf("\nEnter the sign operator (+, -, *, / or e [to EXIT]:\n");
         scanf_s(" %c", &sign, sizeof(char));
@@ -35,7 +35,7 @@ int main() {
             printf("\nGoodBye!!\n");
             return 0;
         }
-        Creat_number(&n2 ,typeNumber2);
+        Creat_number(&n2, typeNumber2);
 
         Result(&n1, &n2, sign, &result);
 
