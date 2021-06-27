@@ -4,22 +4,22 @@
 
 char *UnZipFile(char *zipFilePath, char *destPath)
 {
-    mz_zip_archive zipArchive;
-    memset(&zipArchive, 0, sizeof(zipArchive));
+    mz_zip_archive archive;
+    memset(&archive, 0, sizeof(archive));
 
-    auto status = mz_zip_reader_init_file(&zipArchive, zipFilePath, 0);
+    auto status = mz_zip_reader_init_file(&archive, zipFilePath, 0);
     if (!status) return "zip file appears invalid...\n";
 
-    int fileCount = (int) mz_zip_reader_get_num_files(&zipArchive);
+    int fileCount = (int) mz_zip_reader_get_num_files(&archive);
     if (fileCount == 0)
     {
-        mz_zip_reader_end(&zipArchive);
+        mz_zip_reader_end(&archive);
         return "the files in the zip file are not found.. ";
     }
     mz_zip_archive_file_stat file_stat;
-    if (!mz_zip_reader_file_stat(&zipArchive, 0, &file_stat))
+    if (!mz_zip_reader_file_stat(&archive, 0, &file_stat))
     {
-        mz_zip_reader_end(&zipArchive);
+        mz_zip_reader_end(&archive);
         return "zip file read error...\n";
     }
 
@@ -32,9 +32,9 @@ char *UnZipFile(char *zipFilePath, char *destPath)
     FixedPath(base);
     for (int i = 0; i < fileCount; i++)
     {
-        if (!mz_zip_reader_file_stat(&zipArchive, i, &file_stat)) continue;
+        if (!mz_zip_reader_file_stat(&archive, i, &file_stat)) continue;
         /* skip directories for now */
-        if (mz_zip_reader_is_file_a_directory(&zipArchive, i)) continue;
+        if (mz_zip_reader_is_file_a_directory(&archive, i)) continue;
         /* make path relative, example:   puppies\0.png */
         char *fileName = file_stat.m_filename;
         char destFile[MAX_PATH_SIZE] = "";
@@ -49,13 +49,13 @@ char *UnZipFile(char *zipFilePath, char *destPath)
             CreateDirectoryRecursive(dirPath);
         }
         lastExtractPath = dirPath;
-        if (!mz_zip_reader_extract_to_file(&zipArchive, i, destFile, 0))
+        if (!mz_zip_reader_extract_to_file(&archive, i, destFile, 0))
         {
             return "something went wrong when unzipping..";
         }
     }
     /* Close the archive, freeing any resources it was using */
-    mz_zip_reader_end(&zipArchive);
+    mz_zip_reader_end(&archive);
     return "success";
 }
 
