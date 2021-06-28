@@ -7,6 +7,7 @@
 #include "pch.h"
 #include "framework.h"
 #include <stdio.h>
+#include <string.h>
 
 /**
 * @brief The stract describe string (= char*).
@@ -33,11 +34,11 @@ size_t GetStringLength(const String *str);
 
 BOOL IsEmpty(const String *str);
 
-BOOL CompareString(const String *str1, const String *str2);
+int CompareString(const String *str1, const String *str2);
 
 void CopyString(String *dst, const String *src);
 
-CopyCString(String *dst, const char *src);
+void CopyCString(String *dst, const char *src);
 
 #endif // ! _SL
 

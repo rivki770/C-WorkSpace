@@ -13,12 +13,12 @@ String *CreateString(const char *source)
         return NULL;
     }
 
-    size_t sizeSource = sizeof(source);
+    size_t sizeSource = strlen(source);
 
     String* stringNew;
     stringNew->string = malloc(sizeof(char) * sizeSource + 1);
     stringNew->string[sizeSource] = '0';
-    stringNew->sizeString = sizeof(stringNew->string);
+    stringNew->sizeString = strlen(stringNew->string);
 
     return stringNew;
 
@@ -58,20 +58,14 @@ BOOL IsEmpty(const String *str)
     }
 }
 
-BOOL CompareString(const String *str1, const String *str2)
+int CompareString(const String *str1, const String *str2)
 {
     if (str1->sizeString != str2->sizeString)
     {
         return F;
     }
-    for (size_t i = 0; i < str1->string; ++i)
-    {
-        if (str1->string[i] != str2->string[i])
-        {
-            return F;
-        }
-    }
-    return T;
+
+    return strcmp(str1->string, str2->string);
 }
 
 void CopyString(String *dst, const String *src) {

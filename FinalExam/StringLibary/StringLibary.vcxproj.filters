@@ -21,12 +21,15 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="StringLibary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="StringLibary.cpp">
+    <ClCompile Include="StringLibary.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pch.cpp">
+    <ClCompile Include="pch.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
