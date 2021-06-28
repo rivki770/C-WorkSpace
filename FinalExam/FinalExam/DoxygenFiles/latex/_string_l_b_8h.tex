@@ -1,0 +1,234 @@
+\hypertarget{_string_l_b_8h}{}\doxysection{String\+LB.\+h File Reference}
+\label{_string_l_b_8h}\index{StringLB.h@{StringLB.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_string__t}{String\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em The stract describe string (= char$\ast$). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_string_l_b_8h_aa93f0eb578d23995850d61f7d61c55c1}{FALSE}}~0
+\item 
+\#define \mbox{\hyperlink{_string_l_b_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{TRUE}}~1
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_string__t}{String\+\_\+t}} \mbox{\hyperlink{_string_l_b_8h_ae5bcae6496345535e5844ccd6919f653}{String}}
+\begin{DoxyCompactList}\small\item\em The stract describe string (= char$\ast$). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_string_l_b_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL}} \{ \mbox{\hyperlink{_string_l_b_8h_a3e5b8192e7d9ffaf3542f1210aec18ddaf382a63cc3d6491bf26b59e66f46826d}{F}}
+, \mbox{\hyperlink{_string_l_b_8h_a3e5b8192e7d9ffaf3542f1210aec18dda21f40778b7db9343a6ca75ec2c41ccce}{T}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum of Bool. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_string_l_b_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$ \mbox{\hyperlink{_string_l_b_8h_a5cfc1221a25e3d1041bdb2862eb27cd6}{Create\+String}} (const char $\ast$source)
+\begin{DoxyCompactList}\small\item\em The function that get char$\ast$ and create string from it. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_string_l_b_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL}} \mbox{\hyperlink{_string_l_b_8h_a3d01240df64276efbf2ac595ece45986}{Delete\+String}} (\mbox{\hyperlink{_string_l_b_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$str)
+\begin{DoxyCompactList}\small\item\em The function that get string and delete him. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{_string_l_b_8h_a20d32745a05117b679906dd98d8741e3}{Get\+String\+Length}} (const \mbox{\hyperlink{_string_l_b_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$str)
+\begin{DoxyCompactList}\small\item\em The function that get string and his length. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_string_l_b_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL}} \mbox{\hyperlink{_string_l_b_8h_ac8b9c4ac6175adcb1edac9f8b0d12e89}{Is\+Empty}} (const \mbox{\hyperlink{_string_l_b_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$str)
+\begin{DoxyCompactList}\small\item\em The function that get string and return if he enpty or not. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_string_l_b_8h_a0d4415a6cb4333fc121db2b57bf02b7d}{Compare\+String}} (const \mbox{\hyperlink{_string_l_b_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$str1, const \mbox{\hyperlink{_string_l_b_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$str2)
+\begin{DoxyCompactList}\small\item\em The function that get string and string, compare between them. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_string_l_b_8h_a89b9e7f061918d4034a5fff190a87028}{Copy\+String}} (\mbox{\hyperlink{_string_l_b_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$dst, const \mbox{\hyperlink{_string_l_b_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$src)
+\begin{DoxyCompactList}\small\item\em The function that get string and string, and copy the string1 to the string2. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_string_l_b_8h_ab874fb348e8b2f9acb1f96918ca5c9df}{Copy\+CString}} (\mbox{\hyperlink{_string_l_b_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$dst, const char $\ast$src)
+\begin{DoxyCompactList}\small\item\em The function that get char$\ast$ and string, and copy the char to the string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Final Exam -\/ The String\+Libary 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_string_l_b_8h_aa93f0eb578d23995850d61f7d61c55c1}\label{_string_l_b_8h_aa93f0eb578d23995850d61f7d61c55c1}} 
+\index{StringLB.h@{StringLB.h}!FALSE@{FALSE}}
+\index{FALSE@{FALSE}!StringLB.h@{StringLB.h}}
+\doxysubsubsection{\texorpdfstring{FALSE}{FALSE}}
+{\footnotesize\ttfamily \#define FALSE~0}
+
+\mbox{\Hypertarget{_string_l_b_8h_aa8cecfc5c5c054d2875c03e77b7be15d}\label{_string_l_b_8h_aa8cecfc5c5c054d2875c03e77b7be15d}} 
+\index{StringLB.h@{StringLB.h}!TRUE@{TRUE}}
+\index{TRUE@{TRUE}!StringLB.h@{StringLB.h}}
+\doxysubsubsection{\texorpdfstring{TRUE}{TRUE}}
+{\footnotesize\ttfamily \#define TRUE~1}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{_string_l_b_8h_ae5bcae6496345535e5844ccd6919f653}\label{_string_l_b_8h_ae5bcae6496345535e5844ccd6919f653}} 
+\index{StringLB.h@{StringLB.h}!String@{String}}
+\index{String@{String}!StringLB.h@{StringLB.h}}
+\doxysubsubsection{\texorpdfstring{String}{String}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_string__t}{String\+\_\+t}} \mbox{\hyperlink{_string_l_b_8h_ae5bcae6496345535e5844ccd6919f653}{String}}}
+
+
+
+The stract describe string (= char$\ast$). 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_string_l_b_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}\label{_string_l_b_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}} 
+\index{StringLB.h@{StringLB.h}!BOOL@{BOOL}}
+\index{BOOL@{BOOL}!StringLB.h@{StringLB.h}}
+\doxysubsubsection{\texorpdfstring{BOOL}{BOOL}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_string_l_b_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL}}}
+
+
+
+Enum of Bool. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F@{F}!StringLB.h@{StringLB.h}}\index{StringLB.h@{StringLB.h}!F@{F}}}\mbox{\Hypertarget{_string_l_b_8h_a3e5b8192e7d9ffaf3542f1210aec18ddaf382a63cc3d6491bf26b59e66f46826d}\label{_string_l_b_8h_a3e5b8192e7d9ffaf3542f1210aec18ddaf382a63cc3d6491bf26b59e66f46826d}} 
+F&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T@{T}!StringLB.h@{StringLB.h}}\index{StringLB.h@{StringLB.h}!T@{T}}}\mbox{\Hypertarget{_string_l_b_8h_a3e5b8192e7d9ffaf3542f1210aec18dda21f40778b7db9343a6ca75ec2c41ccce}\label{_string_l_b_8h_a3e5b8192e7d9ffaf3542f1210aec18dda21f40778b7db9343a6ca75ec2c41ccce}} 
+T&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_string_l_b_8h_a0d4415a6cb4333fc121db2b57bf02b7d}\label{_string_l_b_8h_a0d4415a6cb4333fc121db2b57bf02b7d}} 
+\index{StringLB.h@{StringLB.h}!CompareString@{CompareString}}
+\index{CompareString@{CompareString}!StringLB.h@{StringLB.h}}
+\doxysubsubsection{\texorpdfstring{CompareString()}{CompareString()}}
+{\footnotesize\ttfamily int Compare\+String (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_string_l_b_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$}]{str1,  }\item[{const \mbox{\hyperlink{_string_l_b_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$}]{str2 }\end{DoxyParamCaption})}
+
+
+
+The function that get string and string, compare between them. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$em$>$str1} & pointer is the string. \\
+\hline
+{\em $<$em$>$str2} & pointer is the string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+strcmp({\itshape In\+\_\+z} char const$\ast$ {\itshape Str1, \+\_\+\+In\+\_\+z} char const$\ast$ \+\_\+\+Str2) 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+int = 0/-\/1/1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_string_l_b_8h_ab874fb348e8b2f9acb1f96918ca5c9df}\label{_string_l_b_8h_ab874fb348e8b2f9acb1f96918ca5c9df}} 
+\index{StringLB.h@{StringLB.h}!CopyCString@{CopyCString}}
+\index{CopyCString@{CopyCString}!StringLB.h@{StringLB.h}}
+\doxysubsubsection{\texorpdfstring{CopyCString()}{CopyCString()}}
+{\footnotesize\ttfamily void Copy\+CString (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_string_l_b_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$}]{dst,  }\item[{const char $\ast$}]{src }\end{DoxyParamCaption})}
+
+
+
+The function that get char$\ast$ and string, and copy the char to the string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & pointer is the input char$\ast$. \\
+\hline
+{\em dst} & pointer is the output string$\ast$. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_string_l_b_8h_a5cfc1221a25e3d1041bdb2862eb27cd6}{Create\+String(const char $\ast$source)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{_string_l_b_8h_a89b9e7f061918d4034a5fff190a87028}\label{_string_l_b_8h_a89b9e7f061918d4034a5fff190a87028}} 
+\index{StringLB.h@{StringLB.h}!CopyString@{CopyString}}
+\index{CopyString@{CopyString}!StringLB.h@{StringLB.h}}
+\doxysubsubsection{\texorpdfstring{CopyString()}{CopyString()}}
+{\footnotesize\ttfamily void Copy\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_string_l_b_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$}]{dst,  }\item[{const \mbox{\hyperlink{_string_l_b_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$}]{src }\end{DoxyParamCaption})}
+
+
+
+The function that get string and string, and copy the string1 to the string2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & pointer is the input string$\ast$. \\
+\hline
+{\em dst} & pointer is the output string$\ast$. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_string_l_b_8h_a5cfc1221a25e3d1041bdb2862eb27cd6}\label{_string_l_b_8h_a5cfc1221a25e3d1041bdb2862eb27cd6}} 
+\index{StringLB.h@{StringLB.h}!CreateString@{CreateString}}
+\index{CreateString@{CreateString}!StringLB.h@{StringLB.h}}
+\doxysubsubsection{\texorpdfstring{CreateString()}{CreateString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_string_l_b_8h_ae5bcae6496345535e5844ccd6919f653}{String}}$\ast$ Create\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{source }\end{DoxyParamCaption})}
+
+
+
+The function that get char$\ast$ and create string from it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & is the input char$\ast$. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to the String. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_string_l_b_8h_a3d01240df64276efbf2ac595ece45986}\label{_string_l_b_8h_a3d01240df64276efbf2ac595ece45986}} 
+\index{StringLB.h@{StringLB.h}!DeleteString@{DeleteString}}
+\index{DeleteString@{DeleteString}!StringLB.h@{StringLB.h}}
+\doxysubsubsection{\texorpdfstring{DeleteString()}{DeleteString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_string_l_b_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL}} Delete\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_string_l_b_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+The function that get string and delete him. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$em$>$str} & pointer is the string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BOOL T or F, if the delete was done. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_string_l_b_8h_a20d32745a05117b679906dd98d8741e3}\label{_string_l_b_8h_a20d32745a05117b679906dd98d8741e3}} 
+\index{StringLB.h@{StringLB.h}!GetStringLength@{GetStringLength}}
+\index{GetStringLength@{GetStringLength}!StringLB.h@{StringLB.h}}
+\doxysubsubsection{\texorpdfstring{GetStringLength()}{GetStringLength()}}
+{\footnotesize\ttfamily size\+\_\+t Get\+String\+Length (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_string_l_b_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+The function that get string and his length. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$em$>$str} & pointer is the string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the length of the string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_string_l_b_8h_ac8b9c4ac6175adcb1edac9f8b0d12e89}\label{_string_l_b_8h_ac8b9c4ac6175adcb1edac9f8b0d12e89}} 
+\index{StringLB.h@{StringLB.h}!IsEmpty@{IsEmpty}}
+\index{IsEmpty@{IsEmpty}!StringLB.h@{StringLB.h}}
+\doxysubsubsection{\texorpdfstring{IsEmpty()}{IsEmpty()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_string_l_b_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL}} Is\+Empty (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_string_l_b_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+The function that get string and return if he enpty or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$em$>$str} & pointer is the string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BOOL false or true 
+\end{DoxyReturn}
