@@ -79,5 +79,3 @@ void CopyString(String *dst, const String *src);
 void CopyCString(String *dst, const char *src);
 
 #endif // !_STRLIB
-
-

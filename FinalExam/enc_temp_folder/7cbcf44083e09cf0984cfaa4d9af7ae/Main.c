@@ -26,7 +26,7 @@ int main(void)
     const String *string2 = NULL;
     string2 = CreateString(string);
 
-    if (!CompareString(string1, string2)) //יש כאן שגיאת זמן ריצה
+    if (!CompareString(string1, string2))
     {
         printf("The strings is equls\n");
     }

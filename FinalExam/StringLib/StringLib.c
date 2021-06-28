@@ -54,6 +54,16 @@ BOOL IsEmpty(const String *str)
 
 int CompareString(const String *str1, const String *str2)
 {
+    if (IsEmpty(str1) && IsEmpty(str2))
+    {
+        return T;
+    }
+
+    if (IsEmpty(str1) || IsEmpty(str2))
+    {
+        return F;
+    }
+
     if (str1->sizeString != str2->sizeString)
     {
         return F;
