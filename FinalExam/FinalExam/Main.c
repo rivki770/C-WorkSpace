@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <limits.h>
-//#include <C:\rivki\studies\YearC\semesterB\C-WorkSpace\FinalExam\StringLib\StringLib.h>
-#include "StringLB.h"
+#include <C:\rivki\studies\YearC\semesterB\C-WorkSpace\FinalExam\StringLib\StringLib.h>
+//#include "StringLB.h"
 
 int main(void)
 {
-    const char string[50] = "GOOD LUCK in final exam";
+    const char *string = "GOOD LUCK in final exam";
     String *stringCopy = NULL;
-    stringCopy = CreateString(string);
+    stringCopy = CreateString(&string);
 
     if (stringCopy != NULL)
     {

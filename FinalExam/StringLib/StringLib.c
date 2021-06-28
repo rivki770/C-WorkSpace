@@ -1,7 +1,8 @@
 #include "StringLib.h"
+
 String *CreateString(const char *source)
 {
-    if (*source)
+    if (*source == NULL)
     {
         printf("The source is empty\n");
         return NULL;
